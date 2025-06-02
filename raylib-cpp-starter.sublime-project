@@ -1,0 +1,26 @@
+{
+  "folders":
+  [
+    {
+      "path": "."
+    }
+  ],
+  "build_systems":
+  [
+    {
+      "name": "Build Project",
+      "working_dir": "${project_path}",
+      "cmd": ["make"],
+      "shell": true,
+      "variants":
+      [
+        {
+          "name": "Run",
+          "cmd": ["make setup"],
+          "working_dir": "${project_path}",
+          "shell": true
+        }
+      ]
+    }
+  ]
+}
